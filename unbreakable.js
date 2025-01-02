@@ -8,7 +8,6 @@ function join(str, I) {
             result += I;
         }
     }
-
     return result;
 }
 
@@ -24,7 +23,6 @@ function split(str , S = '') {
         }
         return splitted;
     }
-
     for (let i = 0 ; i < str.length ; i++){
         if (S && str.startsWith(S,i)){
             splitted.push(rt)

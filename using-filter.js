@@ -27,9 +27,7 @@ function filter1DistinctVowel(st) {
 function multiFilter(st) {
   return st.filter(
     (word) =>
-      word.capital.length >= 8 &&
-      !/^[aeiou]/i.test(word.name) &&
-      /[aeiou]/i.test(word.tag) &&
+      word.capital.length >= 8 && !/^[aeiou]/i.test(word.name) && /[aeiou]/i.test(word.tag) &&
       word.region !== "South"
   );
 }

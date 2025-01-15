@@ -1,23 +1,23 @@
 export function getArchitects() {
-  const aElem = document.querySelectorAll("a");
-  const noNarch = document.querySelectorAll("span");
-  return [aElem, noNarch];
+  const a = document.querySelectorAll('a');
+  const nonarch = document.querySelectorAll('span');
+  return [a, nonarch];
 }
 
 export function getClassical() {
-  const classical = document.querySelectorAll(".classical");
-  const notclassical = document.querySelectorAll(":not(classical)");
-  return [classical, notclassical];
+  const classical = document.querySelectorAll('.classical');
+  const nonclassical = document.querySelectorAll(':not(.classical)');
+  return [classical, nonclassical];
 }
 
 export function getActive() {
-  const ative = document.querySelectorAll(".active");
-  const nonative = document.querySelectorAll(".classical:not(.active)");
-  return [ative, nonative];
+    const active = document.querySelectorAll('.active')
+    const nonactive = document.querySelectorAll(':not(active)')
+    return [active ,nonactive ]
 }
 
 export function getBonannoPisano() {
-  const bonanno = document.getElementById("BonannoPisano");
-  const activeelm = document.body.querySelectorAll(".classicale");
-  return [bonanno, activeelm];
+    const classicalactive = document.getElementById('BonannoPisano')
+    const classicalnonactive = document.querySelectorAll('.classical,.active')
+    return [classicalactive ,classicalnonactive ]
 }

@@ -28,3 +28,4 @@ function reduceValues(obj,  func ,acc=0) {
   }
   return acc;
 }
+console.log(reduceValues({ a: 1, b: 2, c: 3 }, (acc, cr) => acc + cr, 3));

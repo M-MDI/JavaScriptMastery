@@ -50,6 +50,3 @@ function modulo(a, b) {
         return remain;
     }
 }
-
-
-console.log(divide(34,78));

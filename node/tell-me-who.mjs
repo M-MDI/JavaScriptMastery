@@ -11,7 +11,6 @@ async function countFiles(folder) {
       const ress = res.split("_")[0];
       const resss = res.split("_")[1];
       total.push([resss, ress]);
-      // console.log(i+1 +'. '+resss+' '+ress);
     }
     total.sort((a, b) => a[0].localeCompare(b[0]));
     for (let i = 0; i < total.length; i++) {

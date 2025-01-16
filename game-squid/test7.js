@@ -8,13 +8,14 @@ function debounce(func, delay) {
   };
 }
 
-function opDebounce(func, delay, leading = false) {
+function debounce(func, delay) {
   let timer;
 
   return function (...arg) {
     if (leading && !timer) {
       func(...arg);
     }
+
     clearTimeout(timer);
     timer = setTimeout(() => {
       func(...arg);
